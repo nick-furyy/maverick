@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>All Types of Compost</title>
+	<link rel="stylesheet" type="text/css" href="style4.css">
+</head>
+<body>
+	<header>
+		<h1>All Types of Compost</h1>
+		<nav>
+			<ul>
+				<li><a href="#why-compost">Why Compost?</a></li>
+				<li><a href="#how-to-compost">How to Compost</a></li>
+				<li><a href="#types-of-compost">Types of Compost</a></li>
+				<li><a href="#tips">Composting Tips</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section id="why-compost">
+			<h2>Why Compost?</h2>
+			<p>Learn about the benefits of composting, including reducing waste, improving soil health, and reducing greenhouse gas emissions.</p>
+			<a href="https://www.epa.gov/recycle/composting-home" target="_blank">Learn More</a>
+		</section>
+
+		<section id="how-to-compost">
+			<h2>How to Compost</h2>
+			<p>Discover how to start composting, including choosing a location, selecting materials, and maintaining your compost pile.</p>
+			<a href="https://www.planetnatural.com/composting-101/" target="_blank">Learn More</a>
+		</section>
+
+		<section id="types-of-compost">
+			<h2>Types of Compost</h2>
+			<p>Explore different types of compost, including hot composting, vermicomposting, and sheet composting.</p>
+			<a href="https://www.gardeningknowhow.com/composting/basics/types-of-composting.htm" target="_blank">Learn More</a>
+		</section>
+
+		<section id="tips">
+			<h2>Composting Tips</h2>
+			<p>Get tips on successful composting, including what to compost, what not to compost, and how to troubleshoot common problems.</p>
+			<a href="https://www.goodhousekeeping.com/home/gardening/advice/a19547/home-composting-tips/" target="_blank">Learn More</a>
+		</section>
+	</main>
+
+	<footer>
+		<p>&copy; 2023 All Types of Compost</p>
+	</footer>
+
+	<!-- JavaScript for smooth scrolling -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		    $("a").on('click', function(event) {
+		        if (this.hash !== "") {
+		            event.preventDefault();
+		            var hash = this.hash;
+		            $('html, body').animate({
+		                scrollTop: $(hash).offset().top
+		            }, 800, function(){
+		                window.location.hash = hash;
+		            });
+		        }
+		    });
+		});
+        // Add smooth scrolling to links
+$(document).ready(function(){
+$("a").on('click', function(event) {
+if (this.hash !== "") {
+event.preventDefault();
+var hash = this.hash;
+$('html, body').animate({
+scrollTop: $(hash).offset().top
+}, 800, function(){
+window.location.hash = hash;
+});
+}
+});
+});
+	</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign Up Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <h1>Sign Up</h1>
+        <div class="input-field">
+          <input type="text" placeholder="Username" id="username">
+          <span class="error" id="username-error"></span>
+        </div>
+        <div class="input-field">
+          <input type="email" placeholder="Email" id="email">
+          <span class="error" id="email-error"></span>
+        </div>
+        <div class="input-field">
+          <input type="password" placeholder="Password" id="password">
+          <span class="error" id="password-error"></span>
+        </div>
+        <div class="button">
+          <button type="submit" onclick="validateForm()">Sign Up</button>
+        </div>
+        <div class="login-link">
+          Already have an account? <a href="login.html">Log in here</a>
+        </div>
+      </form>
+      <div class="image">
+        <img src="https://images.unsplash.com/photo-1542744176-3c9594cdc4a7" alt="signup image">
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
